@@ -1,0 +1,31 @@
+爬虫脚本
+    同城直播脚本
+    bash shell/live_module/pdd_live_monitor_room_nearby.sh
+    bash shell/kill_process/kill_live_monitor_room_nearby.sh
+    直播间详情脚本
+    bash shell/live_module/pdd_live_monitor_room_detail.sh
+    bash shell/kill_process/kill_live_monitor_room_detail.sh
+    商品销量脚本
+    bash shell/live_module/pdd_live_monitor_promotion_sales.sh
+    bash shell/kill_process/kill_live_monitor_promotion_sales.sh
+    商品列表脚本v1
+    bash shell/live_module/pdd_live_monitor_promotion_v1.sh
+    bash shell/kill_process/kill_live_monitor_promotion_v1.sh
+    商品列表脚本v2
+    bash shell/live_module/pdd_live_monitor_promotion_v2.sh
+    bash shell/kill_process/kill_live_monitor_promotion_v2.sh
+
+redis队列推送脚本
+    同城直播队列
+    python redis_init/pdd_monitor_room_nearby_push.py
+    红包广场队列
+    python redis_init/pdd_monitor_redpacket_square_push.py
+    商品销量脚本
+    python redis_init/pdd_monitor_promotion_sales_push.py
+
+服务脚本
+    python3 request/live_monitor_redpacket_square.py
+    python service/monitor_promotion_data_complement.py
+    python service/monitor_system_status_listen.py 'redis'
+    bash shell/monitor_promotion_data_complement.sh
+    bash shell/aiohttp_redpacket_square_api.sh
